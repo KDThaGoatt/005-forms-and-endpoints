@@ -8,11 +8,6 @@
             align-items: flex-start;
             gap: 10px;
         }
-        .form-group {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
         label {
             width: 150px;
             font-weight: bold;
@@ -21,63 +16,32 @@
             border:1px solid blue;
             color: red;
         }
-        input[type="submit"] {
-            background-color: blue;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-            align-self: flex-start;
-        }
-        input[type="submit"]:hover {
-            background-color: darkblue;
-        }
     </style>
 </head>
 <body>
     <body>
         <h1>Create Your Mad Libs Story</h1>
         <form method="POST" action="http://127.0.0.1:5000/question">
-            <div class="form-group">
                 <label for="adjective">Adjective:</label>
-                <input type="text" id="adjective" name="adjective" placeholder="Adjective" required>
-            </div>
-            <div class="form-group">
+                <input type="text" id="inputBox" name="adjective" placeholder="Adjective" required>
                 <label for="noun">Noun:</label>
-                <input type="text" id="noun" name="noun" placeholder="Noun" required>
-            </div>
-            <div class="form-group">
+                <input type="text" id="inputBox" name="noun" placeholder="Noun" required>
                 <label for="verbpt">Past Tense Verb:</label>
-                <input type="text" id="verbpt" name="verbpt" placeholder="Past Tense Verb" required>
-            </div>
-            <div class="form-group">
+                <input type="text" id="inputBox" name="verbpt" placeholder="Past Tense Verb" required>
                 <label for="place">Place:</label>
-                <input type="text" id="place" name="place" placeholder="Place" required>
-            </div>
-            <div class="form-group">
+                <input type="text" id="inputBox" name="place" placeholder="Place" required>
                 <label for="animal">Animal:</label>
-                <input type="text" id="animal" name="animal" placeholder="Animal" required>
-            </div>
-            <div class="form-group">
+                <input type="text" id="inputBox" name="animal" placeholder="Animal" required>
                 <label for="pluralNoun">Plural Noun:</label>
-                <input type="text" id="pluralNoun" name="pluralNoun" placeholder="Plural Noun" required>
-            </div>
-            <div class="form-group">
+                <input type="text" id="inputBox" name="pluralNoun" placeholder="Plural Noun" required>
                 <label for="adverb">Adverb:</label>
-                <input type="text" id="adverb" name="adverb" placeholder="Adverb" required>
-            </div>
-            <div class="form-group">
+                <input type="text" id="inputBox" name="adverb" placeholder="Adverb" required>
                 <label for="celebrity">Celebrity:</label>
-                <input type="text" id="celebrity" name="celebrity" placeholder="Celebrity" required>
-            </div>
-            <div class="form-group">
+                <input type="text" id="inputBox" name="celebrity" placeholder="Celebrity" required>
                 <label for="emotion">Emotion:</label>
-                <input type="text" id="emotion" name="emotion" placeholder="Emotion" required>
-            </div>
-            <div class="form-group">
+                <input type="text" id="inputBox" name="emotion" placeholder="Emotion" required>
                 <label for="food">Food:</label>
-                <input type="text" id="food" name="food" placeholder="Food" required>
-            </div>
+                <input type="text" id="inputBox" name="food" placeholder="Food" required>
             <div>
                 <input type="submit" value="Create Story">
             </div>

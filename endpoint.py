@@ -21,7 +21,7 @@ def endpoint():
 </head>
 <body>
     <div class ='result'>Hello, {data['fname']}!</div>
-    You hve successfully sent data to a form!
+    You have successfully sent data to a form!
 </body>
     """
     return output
